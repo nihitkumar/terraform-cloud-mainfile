@@ -19,7 +19,7 @@ module "dev_compute_1" {
 }
 
 module "dev_elb_1" {
-  source          = "app.terraform.io/modules-in-cloud/dev/cloud"
+  source = "app.terraform.io/modules-in-cloud/elb/cloud"
   version         = "1.0.0"
   environment     = module.dev_vpc_1.environment
   nlbname         = "dev-nlb"
